@@ -32,7 +32,7 @@ Também foram utilizados recursos como:
 ## 📁 Estrutura
 
 ```text
-Portf-lio-Site/
+Portfolio_Site/
 │
 ├── pages/
 │   ├── home/
