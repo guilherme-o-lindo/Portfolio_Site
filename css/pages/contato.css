@@ -1,0 +1,35 @@
+main {
+    text-align: center;
+}
+
+main h1 {
+    font-size: 48px;
+    margin-bottom: 30px;
+}
+
+main p {
+    font-size: 18px;
+    color: rgba(255, 255, 255, 0.75);
+}
+
+main p a {
+    color: #fff;
+    font-weight: 600;
+}
+
+main > a {
+    display: inline-block;
+
+    margin-top: 20px;
+    padding: 14px 25px;
+
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    border-radius: 10px;
+
+    background: rgba(255, 255, 255, 0.06);
+}
+
+main > a:hover {
+    background: rgba(255, 255, 255, 0.12);
+    transform: translateY(-3px);
+}
