@@ -2,7 +2,7 @@
 
 Meu site de portfólio pessoal, desenvolvido para apresentar um pouco sobre mim, meus conhecimentos, tecnologias que estou estudando e meus projetos.
 
-🌐 **Acesse o portfólio:** [Site](https://guilherme-o-lindo.github.io/Portf-lio-Site/)
+🌐 **Acesse o portfólio:** [Site](https://guilherme-o-lindo.github.io/Portfolio_Site/)
 
 ## 📌 Sobre
 
