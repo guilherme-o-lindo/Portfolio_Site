@@ -1,4 +1,4 @@
-# Portfólio — Guilherme Cordeiro
+# Portfólio
 
 Meu site de portfólio pessoal, desenvolvido para apresentar um pouco sobre mim, meus conhecimentos, tecnologias que estou estudando e meus projetos.
 
