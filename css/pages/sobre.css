@@ -73,33 +73,40 @@ main {
 
 .historia {
     position: relative;
+    padding: 10px 0;
 }
 
-
-/* Linha vertical */
+/* Linha */
 
 .historia::before {
     content: "";
 
     position: absolute;
 
-    top: 10px;
-    bottom: 10px;
-    left: 31px;
+    top: 25px;
+    bottom: 25px;
+    left: 22px;
 
-    width: 1px;
+    width: 2px;
 
-    background: rgba(255, 255, 255, 0.12);
+    background: linear-gradient(
+        to bottom,
+        rgba(255, 255, 255, 0.03),
+        rgba(255, 255, 255, 0.2),
+        rgba(255, 255, 255, 0.03)
+    );
 }
 
+
+/* Item */
 
 .historia-item {
     position: relative;
 
     display: grid;
-    grid-template-columns: 65px 1fr;
+    grid-template-columns: 45px 1fr;
 
-    gap: 25px;
+    column-gap: 40px;
 
     margin-bottom: 65px;
 }
@@ -109,7 +116,7 @@ main {
 
 .historia-numero {
     position: relative;
-    z-index: 1;
+    z-index: 2;
 
     display: flex;
 
@@ -123,22 +130,75 @@ main {
 
     background: #181818;
 
-    border: 1px solid rgba(255, 255, 255, 0.2);
+    border: 1px solid rgba(255, 255, 255, 0.25);
 
-    font-size: 12px;
+    font-size: 11px;
     font-weight: 700;
+    letter-spacing: 1px;
 
     color: rgba(255, 255, 255, 0.65);
+
+    box-shadow:
+        0 0 0 6px rgba(255, 255, 255, 0.02),
+        0 8px 20px rgba(0, 0, 0, 0.25);
+
+    transition:
+        transform 0.3s ease,
+        border-color 0.3s ease,
+        color 0.3s ease;
+}
+
+
+/* Bloco de texto */
+
+.historia-item > div {
+    padding: 25px 30px;
+
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    border-radius: 18px;
+
+    background: rgba(255, 255, 255, 0.035);
+
+    transition:
+        transform 0.3s ease,
+        border-color 0.3s ease,
+        background 0.3s ease,
+        box-shadow 0.3s ease;
+}
+
+
+/* Hover */
+
+.historia-item:hover .historia-numero {
+    transform: scale(1.08);
+
+    border-color: rgba(255, 255, 255, 0.45);
+
+    color: white;
+}
+
+.historia-item:hover > div {
+    transform: translateX(6px);
+
+    border-color: rgba(255, 255, 255, 0.18);
+
+    background: rgba(255, 255, 255, 0.055);
+
+    box-shadow:
+        0 15px 35px rgba(0, 0, 0, 0.18);
+}
+
+
+/* Títulos */
+
+.historia-item h2 {
+    margin: 0 0 15px;
+
+    font-size: 28px;
 }
 
 
 /* Texto */
-
-.historia-item h2 {
-    margin: 5px 0 18px;
-
-    font-size: 28px;
-}
 
 .historia-item p {
     max-width: 700px;
@@ -148,5 +208,9 @@ main {
     font-size: 17px;
     line-height: 1.8;
 
-    color: rgba(255, 255, 255, 0.72);
+    color: rgba(255, 255, 255, 0.68);
+}
+
+.historia-item p:last-child {
+    margin-bottom: 0;
 }
