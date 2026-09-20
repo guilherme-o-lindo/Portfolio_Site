@@ -10,9 +10,8 @@ Este projeto foi desenvolvido como parte de um trabalho dos meus estudos na E.E.
 
 O site apresenta:
 
-- Uma breve apresentação sobre mim
+- Uma apresentação sobre mim
 - Tecnologias e linguagens que estou estudando
-- Informações sobre minha formação
 - Projetos desenvolvidos
 - Formas de contato
 
