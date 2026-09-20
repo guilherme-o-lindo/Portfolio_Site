@@ -1,35 +1,133 @@
 main {
     text-align: center;
+    padding: 70px 20px;
 }
 
 main h1 {
-    font-size: 48px;
-    margin-bottom: 30px;
+    font-size: clamp(40px, 6vw, 58px);
+    margin-bottom: 15px;
 }
 
-main p {
+.subtitulo {
+    max-width: 600px;
+    margin: 0 auto 50px;
+
     font-size: 18px;
-    color: rgba(255, 255, 255, 0.75);
+    line-height: 1.6;
+
+    color: rgba(255, 255, 255, 0.65);
 }
 
-main p a {
-    color: #fff;
-    font-weight: 600;
+
+/* Cards */
+
+.contatos {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+
+    gap: 20px;
+
+    max-width: 900px;
+    margin: 0 auto;
 }
 
-main > a {
-    display: inline-block;
+.contato {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 
-    margin-top: 20px;
-    padding: 14px 25px;
+    padding: 30px 25px;
 
-    border: 1px solid rgba(255, 255, 255, 0.15);
-    border-radius: 10px;
+    text-align: center;
+
+    border: 1px solid rgba(255, 255, 255, 0.12);
+    border-radius: 18px;
 
     background: rgba(255, 255, 255, 0.06);
+
+    transition:
+        transform 0.3s ease,
+        border-color 0.3s ease,
+        box-shadow 0.3s ease;
 }
 
-main > a:hover {
-    background: rgba(255, 255, 255, 0.12);
-    transform: translateY(-3px);
+
+/* Pequena inclinação */
+
+.contato:nth-child(1) {
+    transform: rotate(-1deg);
+}
+
+.contato:nth-child(2) {
+    transform: rotate(1deg);
+}
+
+.contato:nth-child(3) {
+    transform: rotate(-0.5deg);
+}
+
+
+/* Hover */
+
+.contato:hover {
+    transform: translateY(-8px) rotate(0deg);
+
+    border-color: rgba(255, 255, 255, 0.25);
+
+    box-shadow:
+        0 20px 40px rgba(0, 0, 0, 0.3);
+}
+
+
+/* Tipo */
+
+.contato-tipo {
+    margin-bottom: 18px;
+
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 2px;
+
+    color: rgba(255, 255, 255, 0.45);
+}
+
+
+/* Logo */
+
+.contato img {
+    width: 65px;
+    height: 65px;
+
+    object-fit: contain;
+
+    margin-bottom: 18px;
+
+    border-radius: 14px;
+}
+
+
+/* Informação */
+
+.contato-info {
+    font-size: 16px;
+    font-weight: 600;
+    color: white;
+    word-break: break-word;
+}
+
+
+/* Ação */
+
+.contato-acao {
+    margin-top: 20px;
+
+    font-size: 14px;
+
+    color: rgba(255, 255, 255, 0.5);
+
+    transition: color 0.25s ease;
+}
+
+.contato:hover .contato-acao {
+    color: white;
 }
