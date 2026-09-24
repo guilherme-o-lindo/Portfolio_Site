@@ -32,14 +32,6 @@ main h1 {
 }
 
 .contato {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-
-    padding: 30px 25px;
-
-    text-align: center;
-
     border: 1px solid rgba(255, 255, 255, 0.12);
     border-radius: 18px;
 
@@ -52,37 +44,38 @@ main h1 {
 }
 
 
-/* Pequena inclinação */
+/* Link */
 
-.contato:nth-child(1) {
-    transform: rotate(-1deg);
-}
+.contato > a {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 
-.contato:nth-child(2) {
-    transform: rotate(1deg);
-}
+    width: 100%;
+    height: 100%;
 
-.contato:nth-child(3) {
-    transform: rotate(-0.5deg);
+    padding: 30px 25px;
+
+    text-align: center;
+
+    color: inherit;
+    text-decoration: none;
 }
 
 
 /* Hover */
 
 .contato:hover {
-    transform: translateY(-8px) rotate(0deg);
+    transform: translateY(-8px);
 
     border-color: rgba(255, 255, 255, 0.25);
-
-    box-shadow:
-        0 20px 40px rgba(0, 0, 0, 0.3);
 }
 
 
 /* Tipo */
 
-.contato-tipo {
-    margin-bottom: 18px;
+.contato h2 {
+    margin: 10px 0 18px;
 
     font-size: 11px;
     font-weight: 700;
@@ -111,7 +104,9 @@ main h1 {
 .contato-info {
     font-size: 16px;
     font-weight: 600;
+
     color: white;
+
     word-break: break-word;
 }
 
@@ -126,8 +121,4 @@ main h1 {
     color: rgba(255, 255, 255, 0.5);
 
     transition: color 0.25s ease;
-}
-
-.contato:hover .contato-acao {
-    color: white;
 }

@@ -30,6 +30,10 @@ body {
     user-select: none;
 }
 
+address {
+    font-style: normal;
+}
+
 input, textarea, a, button {
     user-select: text;
 }
