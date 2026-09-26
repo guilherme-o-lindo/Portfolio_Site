@@ -48,7 +48,7 @@ main {
     color: rgba(255, 255, 255, 0.45);
 }
 
-.perfil h1 {
+.perfil h2 {
     margin: 12px 0 20px;
 
     font-size: clamp(40px, 5vw, 60px);

@@ -31,15 +31,18 @@ Também foram utilizados recursos como:
 ## 📁 Estrutura
 
 ```text
-Portfolio_Site/
+Site_Portfolio/
 │
 ├── pages/
 │   ├── home/
 │   ├── sobre/
 │   └── contato/
 │
+├── css/
+│   ├── main.css
+│   └── pages/
+│
 ├── src/
-│   ├── css/
 │   ├── imgs/
 │   └── gifs/
 │

@@ -3,7 +3,7 @@ main {
     padding: 70px 20px;
 }
 
-main h1 {
+main h2 {
     font-size: clamp(40px, 6vw, 58px);
     margin-bottom: 15px;
 }
@@ -29,6 +29,8 @@ main h1 {
 
     max-width: 900px;
     margin: 0 auto;
+
+    align-items: start;
 }
 
 .contato {
